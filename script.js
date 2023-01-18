@@ -1,19 +1,18 @@
-// complete the given function
-
 function palindrome(str){
-    //converting string to array
-    let array = str.split('');
-    //converting reverse array
-    let reverse=array.reverse();
-    //join the reverse array and mae string
-    let reversestring=reverse.join('');
+	// convert string to an array
+    const arrayValues = str.split('');
 
-    if(str == reversestring){
-        return true
-    }else{
-        false
+    // reverse the array values
+    const reverseArrayValues = arrayValues.reverse();
+
+    // convert array to string
+    const reverseString = reverseArrayValues.join('');
+
+    if(str == reverseString) {
+        return true;
     }
-
+    else {
+        return false;
+    }
 }
-
 module.exports = palindrome
